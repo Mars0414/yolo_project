@@ -1,0 +1,6 @@
+*.pt
+runs/
+*.mp4
+*.pt
+runs/
+.DS_Store
