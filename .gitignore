@@ -1,7 +1,6 @@
 *.pt
 runs/
 .DS_Store
-__pycache__/
 *.py[cod]
 *$py.class
 venv/
@@ -11,3 +10,5 @@ env/
 .AppleDouble
 .LSOverride
 ._*
+.idea/
+__pycache__/
