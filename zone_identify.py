@@ -33,11 +33,11 @@ if contours:
         'zone1': points_list
     }
 
-    output_file = 'zone_coords.json'
+    output_file = 'restricted_zones.json'
     with open(output_file, 'w') as f:
         json.dump(date_to_save, f, indent=4)
 
-    print(f'zone_coords.json saved to {output_file}')
+    print(f'restricted_zones.json saved to {output_file}')
     print(f'number of points: {len(points_list)}')
 
 else:
