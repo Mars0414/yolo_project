@@ -1,10 +1,6 @@
 import cv2
 
 def detect(person_coords, zone_polygon):
-        """
-        Проверяет, наступил ли человек в зону.
-        Проверяем ТРИ точки: левая нога, правая нога, центр.
-        """
         x1, y1, x2, y2 = map(int, person_coords)
 
         feet_y = y2
