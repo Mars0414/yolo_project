@@ -1,4 +1,13 @@
 *.pt
 runs/
-runs/
 .DS_Store
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+.AppleDouble
+.LSOverride
+._*
