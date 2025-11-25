@@ -3,11 +3,21 @@ import cv2
 def detect(person_coords, zone_polygon):
         x1, y1, x2, y2 = map(int, person_coords)
 
+        head_y = y1
         feet_y = y2
+
+
+        left_head_x = x1
+        right_head_x = x2
+        center_head_x = int((x1 + x2) / 2)
 
         left_foot_x = x1
         right_foot_x = x2
         center_foot_x = int((x1 + x2) / 2)
+
+        check1 = cv2.pointPolygonTest(zone_polygon, (left_head_x, head_y), False)
+        check2 = cv2.pointPolygonTest(zone_polygon, (right_head_x, head_y), False)
+        check3 = cv2.pointPolygonTest(zone_polygon, (center_head_x, head_y), False)
 
         check1 = cv2.pointPolygonTest(zone_polygon, (left_foot_x, feet_y), False)
         check2 = cv2.pointPolygonTest(zone_polygon, (right_foot_x, feet_y), False)
